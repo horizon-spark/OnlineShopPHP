@@ -1,0 +1,10 @@
+{
+    "name": "horizon-spark/online-shop-php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "HorizonSpark\\OnlineShopPhp\\": "src/"
+        }
+    },
+    "require": {}
+}
