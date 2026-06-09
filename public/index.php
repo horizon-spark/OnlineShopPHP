@@ -23,6 +23,9 @@
             case "logout":
                 require_once("../src/controllers/LogoutController.php");
                 break;
+            case "add-product":
+                require_once("../src/controllers/AddProductController.php");
+                break;
             case "index":
                 require_once("../src/controllers/CatalogController.php");
                 break;
