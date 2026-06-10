@@ -26,6 +26,9 @@
             case "add-product":
                 require_once("../src/controllers/AddProductController.php");
                 break;
+            case "edit-product":
+                require_once("../src/controllers/EditProductController.php");
+                break;
             case "index":
                 require_once("../src/controllers/CatalogController.php");
                 break;
