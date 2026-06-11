@@ -34,10 +34,13 @@
                 Price: <b>{$product['price']}</b><br>
                 Description: <i>{$product['description']}</i>
                 <h4>$category</h4>";
-            if ($_SESSION['user_id'] === 1) {
+            if (isset($_SESSION['user_id']) && $_SESSION['user_id'] === 1) {
                 echo "<h4>
                         <a href='index.php?page=edit-product&id={$product['id']}'>
                             Редактировать
+                        </a>
+                        <a href='index.php?page=delete-product&id={$product['id']}'>
+                            Удалить
                         </a>
                     </h4>";
             }

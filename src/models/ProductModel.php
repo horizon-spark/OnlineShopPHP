@@ -131,5 +131,18 @@
                 header("Location: index.php?page=index");
             }
         }
+
+        function delete_product_by_id($id) {
+            $sql = "DELETE FROM product
+                    WHERE id=:id";
+            
+            $stmt = $this->conn->prepare($sql);
+            $affectedRowsNumber = $stmt->execute(['id' => $id]);
+
+            if ($affectedRowsNumber > 0) {
+                $_SESSION['message'] = "Успешное удаление товара с id = $id";
+                header("Location: index.php?page=index");
+            }
+        }
     }
 ?>
