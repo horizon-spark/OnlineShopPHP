@@ -9,5 +9,10 @@
         <a href="index.php?page=login">Войти</a>
         <a href="index.php?page=register">Регистрация</a>
     <?php endif; ?>
+    <?php if ($theme === 'light'): ?>
+        <a href="index.php?theme=dark">Темная тема</a>
+    <?php else: ?>
+        <a href="index.php?theme=light">Светлая тема</a>
+    <?php endif; ?>
 <header>
 <br>
