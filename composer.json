@@ -6,5 +6,7 @@
             "HorizonSpark\\OnlineShopPhp\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "twbs/bootstrap": "5.3.0"
+    }
 }
