@@ -12,7 +12,7 @@
         $currentPage = 1;
     }
 
-    $itemsPerPage = 1;
+    $itemsPerPage = 2;
     $offset = ($currentPage - 1) * $itemsPerPage;
 
     $total = $product->get_total_count();
@@ -26,5 +26,5 @@
     $products = $product->get_partition($itemsPerPage, $offset);
 
     require_once "../src/views/pages/catalog.php";
-    require_once "../views/footer.php";
+    require_once "../src/views/footer.php";
 ?>

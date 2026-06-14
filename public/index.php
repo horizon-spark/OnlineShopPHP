@@ -3,11 +3,6 @@
 
     require_once "../src/config/db.php";
 
-    if (isset($_SESSION['message'])) {
-        echo "<h3>{$_SESSION['message']}</h3>";
-        unset($_SESSION['message']);
-    }
-
     $theme = filter_input(INPUT_GET, 'theme', FILTER_SANITIZE_SPECIAL_CHARS);
 
     if ($theme !== null && trim($theme) !== '' &&
@@ -23,6 +18,11 @@
     }
 
     require_once "../src/views/header.php";
+
+    if (isset($_SESSION['message'])) {
+        echo "<h3>{$_SESSION['message']}</h3>";
+        unset($_SESSION['message']);
+    }
 
     if (isset($_GET['page']) && !empty($_GET['page'])) {
         $page = $_GET['page'];

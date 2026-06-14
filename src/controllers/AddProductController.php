@@ -6,7 +6,7 @@
     }
 
     require_once "../src/views/pages/add-product.php";
-    require_once "../views/footer.php";
+    require_once "../src/views/footer.php";
     require_once "../src/models/ProductModel.php";
 
     $product = new ProductModel($conn);

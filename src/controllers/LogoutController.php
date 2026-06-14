@@ -1,5 +1,5 @@
 <?php   
-    require_once "../views/footer.php";  
+    require_once "../src/views/footer.php";
     require_once "../src/models/UserModel.php";
 
     $user = new UserModel($conn);

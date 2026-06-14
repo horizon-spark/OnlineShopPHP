@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Shop_PHP</title>
 </head>
 <body>
@@ -65,5 +66,5 @@
             </div>
         </div>
     </nav>
-    <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <main>
     <br>
