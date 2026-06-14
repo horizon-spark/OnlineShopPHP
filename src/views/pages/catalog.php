@@ -1,26 +1,26 @@
 <?php 
-    echo "<style>
-            .container {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 10px;
-            }
-            .card {
-                border: 1px solid black;
-                border-radius: 5px;
-                padding: 0px 0px 10px 10px;
-            }
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.5rem;
-            }
-            a.active {
-                pointer-events: none;
-                cursor: default;
-                color: grey;
-            }
-        </style>";
+    // echo "<style>
+    //         .container {
+    //             display: grid;
+    //             grid-template-columns: repeat(5, 1fr);
+    //             gap: 10px;
+    //         }
+    //         .card {
+    //             border: 1px solid black;
+    //             border-radius: 5px;
+    //             padding: 0px 0px 10px 10px;
+    //         }
+    //         a {
+    //             text-decoration: none;
+    //             color: black;
+    //             font-size: 1.5rem;
+    //         }
+    //         a.active {
+    //             pointer-events: none;
+    //             cursor: default;
+    //             color: grey;
+    //         }
+    //     </style>";
 
 
     if (count($products) == 0) {

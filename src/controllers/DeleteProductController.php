@@ -24,6 +24,7 @@
     $desc_to_delete = $product_to_delete['description'];
 
     require_once "../src/views/pages/delete-product.php";
+    require_once "../views/footer.php";
 
     if (isset($_POST['confirm_delete']) && $_POST['confirm_delete'] == 1) {
         $product->delete_product_by_id($id);

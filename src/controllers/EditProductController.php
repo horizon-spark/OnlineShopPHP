@@ -24,6 +24,7 @@
     $desc_old = $product_old['description'];
 
     require_once "../src/views/pages/edit-product.php";
+    require_once "../views/footer.php";
 
     if (isset($_POST['category']) &&
         isset($_POST['name']) &&

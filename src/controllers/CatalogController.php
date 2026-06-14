@@ -26,4 +26,5 @@
     $products = $product->get_partition($itemsPerPage, $offset);
 
     require_once "../src/views/pages/catalog.php";
+    require_once "../views/footer.php";
 ?>
